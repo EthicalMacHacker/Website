@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Gravitas+One&display=swap');
+
+/* ===========================
+   Root Variables
+=========================== */
+:root {
+    --base-color: #03D100; 
+	--primary-color: #ffc06e; 
+    --secondary-color: #8D8DFF; 
+    
+	
+	--bg-color: #0d0d0d;       
+    --green: #00FF41; 
+    --purple: #d629ff; 
+    --red: #ff3131;    
+    --text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+	--WHITE: #ffffff;
+	--text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+	--section-background: #000000;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Anonymous Pro';
+    color: var(--WHITE);
+}
+
+body {
+    padding: 1em;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    font-family: 'Anonymous Pro';
+	text-shadow: var(--text-shadow);
+}
+
+/* ===========================
+   Typing header effect / Top Banner Section
+=========================== */
+
+.top-banner h1 {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.typing-header {
+  color: var(--purple);
+  font-family: 'Anonymous Pro', monospace;
+  overflow: hidden;            
+  white-space: nowrap;         
+  
+  border-right: 4px solid var(--green); 
+  
+  width: 0;                    
+  display: inline-block;       
+  margin: 0 auto;              
+
+  animation: 
+    typing 3s steps(18) forwards, 
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 18ch; } 
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--green); }
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+	font-weight: bold;
+}
+
+
+/* ===========================
+   Collin Shea Image
+=========================== */
+
+
+header img.CollinImage {
+    max-width: 450px; 
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5; 
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: 20% center; 
+    border: 3px solid var(--purple);
+    box-shadow: 0 0 20px rgba(214, 41, 255, 0.4);
+    margin: 1.5em 0;
+}
+
+
+
+
+.top-banner {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;
+    gap: 4em;
+    margin: 2em auto;
+    width: min(85em, 100%);
+    text-align: center;     
+}
+
+
+.text-container {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;     
+}
+
+
+.top-banner p {
+    color: var(--green);
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 1em 0;           
+    padding: 0; 
+}
+
+/* ===========================
+   Navigation
+=========================== */
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1150px, 100%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    padding: 0 0 0 0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'Anonymous Pro';
+    font-weight: bold;
+	font-size: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--WHITE);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Layout Containers
+=========================== */
+header, section {
+    margin: 2em auto;
+    width: min(85em, 100%);
+    background-color: var(--section-background);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+    text-align: center;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3em;
+	
+}
+
+.top-banner p {
+	font-weight: bold;
+	padding-top: 3em;
+	padding-bottom: 6em;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+.button-wrapper {
+    display: flex;          
+    justify-content: center; 
+    gap: 2em;            
+    margin-top: 2em;       
+}
+
+.cta-button {
+    text-decoration: none;
+    color: black;
+    background-color: var(--purple);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+    transition: 100ms ease; 
+}
+
+.cta-button:hover {
+    transform: scale(1.15);
+}
+
+/* ===========================
+   Skills Section
+=========================== */
+.current-projects h2 {
+  color: var(--purple);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+
+.projects p {
+    color: var(--green);
+	font-weight: bold;
+}
+
+.projects-list {
+    margin-top: 2em;         
+    padding-left: 2em;       
+    text-align: left;        
+    list-style-position: outside; 
+}
+
+.projects-list li {
+    margin-bottom: 1em;      
+    color: var(--WHITE);     
+    font-weight: normal;  
+	text-shadow: 0 0 8px var(----purple);	
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+
+.projects-side-text {
+  text-align: center-left;
+  color: var(--WHITE);
+  padding-right: 2em;
+}
+
+.projects-side-text p {
+	color: var(--green);
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.projects-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+.projects-image-container {
+  flex: 1;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;     
+}
+
+.projects-photo {
+  max-width: 100%;      
+  height: auto;
+  border-radius: 1em;   
+  border: 2px solid var(--purple); 
+  box-shadow: 0 0 15px rgba(214, 41, 255, 0.3);
+}
+
+
+
+
+
+
+/* ===========================
+   Work Grid
+=========================== */
+#my-work h2 {
+    color: var(--purple);
+}
+
+.grid-container {
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "PassCracker chat-server Keylogger"
+        "profile-pic profile-pic profile-pic";
+    gap: 1em;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.15;
+}
+
+/* ===========================
+   Details Section (My Work)
+=========================== */
+
+section h2 {
+	color: var(--purple);
+}
+
+details {
+    margin-top: 1em;
+    background-color: #4F00A3;
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.37rem;
+    font-family: 'Anonymous Pro';
+    color: var(--WHITE);
+}
+
+details p {
+    padding: 1em 2em;
+    background-color: #390075;
+    border-radius: 0.75em;
+}
+
+/* ===========================
+   Contact Form
+=========================== */
+#contact-me h2 {
+	color: var(--purple);
+}
+
+#contact-me p {
+	color: var(--green);
+}
+
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--section-background);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    border: none;
+    font-family: 'Anonymous Pro';
+}
+
+form button {
+    background-color: var(--purple);
+    color: black;
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--purple);
+    font-family: 'Anonymous Pro', sans-serif;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 988px) {
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        justify-content: center; 
+        flex-wrap: wrap;         
+        gap: 1em;                
+    }
+
+    nav li {
+        display: block !important; 
+        margin-right: 0 !important;
+    }
+    
+    nav li:first-child {
+        width: 100%;             
+        text-align: center;
+    }
+	
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
