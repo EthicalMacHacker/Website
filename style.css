@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Gravitas+One&display=swap');
 
-/* =========================== 
+/* ===========================
    Root Variables
 =========================== */
 :root {
@@ -221,18 +221,36 @@ header, section {
     margin-top: 2em;       
 }
 
-.cta-button {
+/* Unified Purple Button Style */
+.cta-button, 
+.download-resume, 
+form button {
+    display: inline-block;
+    padding: 12px 24px;
+    /* Gradient using your brand purple */
+    background: linear-gradient(45deg, var(--purple), #8a1cc3); 
+    color: #000000 !important; 
     text-decoration: none;
-    color: black;
-    background-color: var(--purple);
-    padding: .75em 1.25em;
-    border-radius: .5em;
-    font-weight: 600;
-    transition: 100ms ease; 
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Purple glow effect */
+    box-shadow: 0 0 15px rgba(214, 41, 255, 0.4);
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
 }
 
-.cta-button:hover {
-    transform: scale(1.15);
+/* Hover Effect: Brighter Purple Glow (No Green) */
+.cta-button:hover, 
+.download-resume:hover, 
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(214, 41, 255, 0.7);
+    /* Brighter purple gradient on hover */
+    background: linear-gradient(45deg, #e05cff, var(--purple));
+    color: #000000 !important;
 }
 
 /* ===========================
