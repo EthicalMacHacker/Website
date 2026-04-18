@@ -206,7 +206,7 @@ header, section {
 
 .top-banner p {
 	font-weight: bold;
-	padding-top: 0em;								/*------------------------------------------------------------------*/
+	padding-top: 0em;							
 	padding-bottom: 0em;
 }
 
@@ -309,6 +309,52 @@ header, section {
 
 
 
+/* ===========================
+   Resume Section
+=========================== */
+
+.resume-preview {
+    margin: 20px auto;
+    max-width: 800px; 
+    border: 2px solid #333; 
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.view-link {
+    color: #a855f7; 
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+
+
+#resume p {
+	color: var(--green);
+}
+
+.download-resume{
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #a855f7, #ec4899); 
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    font-family: sans-serif;
+}
+
+.download-resume:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.7); 
+    background: linear-gradient(45deg, #bc66ff, #ff5eb0); 
+}
+
 
 /* ===========================
    Work Grid
@@ -372,7 +418,7 @@ header, section {
 }
 
 .cert-badge:hover {
-    transform: scale(1.08); /* Grows slightly when you hover */
+    transform: scale(1.08); 
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
 }
 
