@@ -324,6 +324,54 @@ form button:hover {
 }
 
 
+/* ===========================
+    Certifications
+=========================== */
+
+#certifications {
+    text-align: center;
+    padding: 2em min(2em, 15%); /* Matches your other sections */
+}
+
+#certifications p {
+    color: var(--green);
+    font-family: 'Anonymous Pro', monospace; 
+    margin-bottom: 2em;
+    font-size: 1.1rem;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 30px;
+}
+
+.cert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex: 1 1 200px; /* Allows them to wrap on smaller screens */
+}
+
+.cert-item h3 {
+    font-size: 1.2rem;
+    color: var(--WHITE);
+}
+
+.cert-badge {
+    max-width: 150px; /* Adjust based on your badge sizes */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+}
+
+.cert-badge:hover {
+    transform: scale(1.1); 
+    filter: drop-shadow(0 0 20px rgba(214, 41, 255, 0.6));
+}
 
 
 
