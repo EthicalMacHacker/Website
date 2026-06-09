@@ -221,13 +221,12 @@ header, section {
     margin-top: 2em;       
 }
 
-/* Unified Purple Button Style */
+
 .cta-button, 
 .download-resume, 
 form button {
     display: inline-block;
     padding: 12px 24px;
-    /* Gradient using your brand purple */
     background: linear-gradient(45deg, var(--purple), #8a1cc3); 
     color: #000000 !important; 
     text-decoration: none;
@@ -236,19 +235,16 @@ form button {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* Purple glow effect */
     box-shadow: 0 0 15px rgba(214, 41, 255, 0.4);
     font-family: 'Anonymous Pro', monospace;
     text-align: center;
 }
 
-/* Hover Effect: Brighter Purple Glow (No Green) */
 .cta-button:hover, 
 .download-resume:hover, 
 form button:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 25px rgba(214, 41, 255, 0.7);
-    /* Brighter purple gradient on hover */
     background: linear-gradient(45deg, #e05cff, var(--purple));
     color: #000000 !important;
 }
@@ -374,52 +370,6 @@ form button:hover {
 }
 
 
-
-/* ===========================
-   Resume Section
-=========================== */
-
-.resume-preview {
-    margin: 20px auto;
-    max-width: 800px; 
-    border: 2px solid #333; 
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #1a1a1a;
-}
-
-.view-link {
-    color: #a855f7; 
-    margin-right: 15px;
-    text-decoration: underline;
-}
-
-
-
-#resume p {
-	color: var(--green);
-}
-
-.download-resume{
-    display: inline-block;
-    padding: 12px 24px;
-    background: linear-gradient(45deg, #a855f7, #ec4899); 
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
-    font-family: sans-serif;
-}
-
-.download-resume:hover {
-    transform: translateY(-2px); 
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.7); 
-    background: linear-gradient(45deg, #bc66ff, #ff5eb0); 
-}
 
 
 /* ===========================

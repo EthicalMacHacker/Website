@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collin Shea's Website</title>
+  <link rel="stylesheet" href="aboutMe-style.css">
+</head>
+<body>
+
+  <!-- ===========================
+       Navigation + Header
+  ============================ -->
+	
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Collin Shea</a></li>
+		<li><a href="https://orcid.org/0009-0004-8806-6350">ORDiD</a></li>
+		<li><a href="https://linktr.ee/CollinShea">Linktree</a></li>
+		<li><a href="https://www.instagram.com/cshea1024">Instagram</a></li>
+		<li><a href="https://www.linkedin.com/in/collinshea/">LinkedIn</a></li>
+        <li><a href="mailto:collin.shea1015@gmail.com">Email</a></li>
+        <li><a href="https://www.github.com/The-R34per">Github</a></li>
+      </ul>
+    </nav>
+
+    <div class="top-banner">
+      <img src="CollinShea.JPG" class="CollinImage" alt="Collin Shea Image">
+
+      <div class="text-container">
+        <h1 class="typing-header">About Me!</h1>
+        <p>I’m Collin Shea, a cybersecurity student and builder who enjoys turning ideas into real, working projects. 
+		I spend most of my time learning offensive security, experimenting with new tools, and developing clean, functional web experiences. 
+		I like solving problems, breaking things ethically, and understanding how technology works beneath the surface. 
+		This page is a snapshot of who I am, what I’m building, and where I’m heading next.</p>
+
+        <div class="button-wrapper">
+          <a href="index.html" class="cta-button">Home Page</a>
+		  <a href="projects.html" class="cta-button">Current Projects</a>
+          <a href="https://github.com/The-R34per" class="cta-button">My GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===========================
+       Hobbies
+  ============================ -->
+  <section>
+  <div class="my-hobbies">
+    <h2>Hobbies</h2>
+    <div class="flex-container">
+      <div class="text-container">
+        <div class="hobbies-side-text">
+          <p>My Hobbies</p>
+		  <ul class="hobbies-list">
+		  <li><strong>Tae Kwon Do</strong> — Currently a 3rd Degree Black Belt (3rd Dan),Tae Kwon Do has become my go‑to way to stay disciplined, 
+		  focused, and active. It keeps me sharp both mentally and physically.<br></li>
+		  <li><strong>Skiing</strong> — Nothing beats being on the mountain. I love the mix of speed, control, and that quiet feeling you get carving through fresh snow.<br></li>
+		  <li><strong>Being outside</strong> — Whether it’s hiking, exploring, or just getting fresh air, being outdoors resets my brain and keeps me grounded.<br></li>
+		  <p>Other hobbies I enjoy are hanging out with friends, coding, playing video games, learning, and so much more!</p>
+		  </ul>
+        </div>
+      </div>
+
+      <div class="hobbies-photo">
+        <img src="hobbies-img.png" alt="Current Projects Photo" class="hobbies-photo">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===========================
+       Quick Flicks + Socials
+  ============================ -->
+  <section id="hobby-photos">
+    <h2>Quick Flicks</h2>
+
+    <div class="grid-container">
+      <img src="hobby1.png" style="grid-area: chat-server" alt="Chat Server Project">
+      <img src="hobby2.png" style="grid-area: PassCracker" alt="PassCracker Project">
+      <img src="hobby3.png" style="grid-area: Keylogger" alt="Keylogger Project">
+      <img src="hobby4.png" style="grid-area: profile-pic" alt="Profile Picture">
+    </div>
+	
+	<button id="socials-btn" class="cta-button">My Socials</button>
+  <div id="socials-terminal" class="terminal hidden">
+	<pre id="terminal-text"></pre>
+  </div>
+	
+  </section>
+  
+  
+  
+
+
+
+<!-- ===========================
+       Resume Section
+  ============================ -->
+
+	<section id="resume" style="text-align: center; padding: 20px;">
+    <h2 style="color: #m-your-purple-color;">My Resume</h2>
+    <p>If you would like to have my un-redacted resume, feel free to reach out to me!</p>	
+    <div class="resume-preview">
+        <embed src="CollinShea-ResumeREDACTED.pdf" type="application/pdf" width="100%" height="500px" />
+    </div>
+
+    <div style="margin-top: 20px;">
+        <a href="CollinShea-ResumeREDACTED.pdf" target="_blank" class="cta-button">View Full Screen</a>
+        <a href="CollinShea-ResumeREDACTED.pdf" download class="cta-button">Download My Resume</a>
+    </div>
+</section>
+
+
+  <!-- ===========================
+       Common Stuff Section
+  ============================ -->
+  <section>
+    <h2>Common Questions</h2>
+
+    <details>
+      <summary>Who am I?</summary>
+      <p>I am a college student who is majoring in Cybersecurity and Advanced Technologies. I like to code, and experiment.</p>
+    </details>
+
+    <details>
+      <summary>What do I do?</summary>
+      <p>I like to create programs in my free time. This website was built completely by myself, in the free time of college papers. I like to experiement with code in ethical and chaotic ways.</p>
+    </details>
+
+    <details>
+      <summary>What are my future plans?</summary>
+      <p>I would like to go work in the private sector as a Penetration Tester. I would also like to create some more programs and tools for ethical hacking and education.</p>
+    </details>
+  </section>
+
+  <!-- ===========================
+       Contact Form
+  ============================ -->
+  <section id="contact-me">
+    <h2>Contact Me</h2>
+		<p>Interested in reaching out? Fill out the form below and I will get in touch!</p>
+
+    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+
+    <form id="contact-form">
+      <input type="text" name="fi-sender-firstName" placeholder="First Name" required>
+      <input type="text" name="fi-sender-lastName" placeholder="Last Name" required>
+      <input type="email" name="fi-sender-email" placeholder="Email" required>
+      <textarea name="fi-text-message" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+      const forminit = new Forminit();
+      const FORM_ID = "1uot4rfz87g";
+
+      document.getElementById("contact-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+        const { data, error } = await forminit.submit(FORM_ID, formData);
+
+        const result = document.getElementById("result");
+
+        if (error) {
+          result.textContent = "Please check your name and try again.";
+          return;
+        }
+
+        result.textContent = "Thank you! Your message has been received!";
+        e.target.reset();
+      });
+    </script>
+  </section>
+
+  <!-- ===========================
+       Footer
+  ============================ -->
+  <footer>
+	<a href="https://orcid.org/0009-0004-8806-6350">ORDiD</a>
+	<a href="https://linktr.ee/CollinShea">Linktree</a>
+	<a href="https://www.instagram.com/cshea1024">Instagram</a>
+	<a href="https://www.linkedin.com/in/collinshea/">LinkedIn</a>
+    <a href="https://github.com/The-R34per">GitHub</a>
+    <a href="mailto:collin.shea1015@gmail.com">Contact</a>
+  </footer>
+
+<script src="socials.js"></script>
+
+</body>
+</html>
