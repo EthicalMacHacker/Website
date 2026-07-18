@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <style>
+        :root {
+            --base-color: #03D100; 
+            --bg-color: #0d0d0d;       
+            --green: #00FF41; 
+            --purple: #d629ff; 
+            --WHITE: #ffffff;
+            --text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+            --section-background: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Anonymous Pro', monospace;
+            color: var(--WHITE);
+            background-color: var(--bg-color);
+        }
+
+        body {
+            padding: 2em 1em;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .policy-container {
+            margin: 2em auto;
+            width: min(85em, 100%);
+            background-color: var(--section-background);
+            padding: min(3em, 10%);
+            border-radius: 1em;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--purple);
+            text-shadow: var(--text-shadow);
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid var(--purple);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--purple);
+            text-shadow: var(--text-shadow);
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            color: var(--green);
+            font-weight: bold;
+            line-height: 1.6;
+            margin: 1em 0;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding-left: 2em;
+            margin: 1em 0;
+            list-style-type: square;
+        }
+
+        li {
+            margin-bottom: 0.8em;
+            color: var(--WHITE);
+            font-size: 1.1rem;
+        }
+
+        strong {
+            color: var(--WHITE);
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(45deg, var(--purple), #8a1cc3); 
+            color: #000000 !important; 
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(214, 41, 255, 0.4);
+            font-family: 'Anonymous Pro', monospace;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(214, 41, 255, 0.7);
+            background: linear-gradient(45deg, #e05cff, var(--purple));
+            color: #000000 !important;
+        }
+
+        a.inline-link {
+            color: var(--purple);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .back-btn { width: 100%; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="policy-container">
+        <a href="index.html" class="back-btn">&larr; Return to Home</a>
+
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> July 2026</p>
+
+        <p>At <strong>Collin Shea's Website Portfolio</strong>, accessible from your website URL, transparency and data protection are paramount. This document legally establishes how personal information gathered via our digital form is processed, secured, and stored.</p>
+
+        <h2>1. Lawful Basis & Data Collection</h2>
+        <p>We process personal communications under the lawful basis of <strong>Legitimate Interests</strong> (Art. 6(1)(f) GDPR) to facilitate business inquiries and direct professional outreach. We only gather data you explicitly volunteer in our contact form:</p>
+        <ul>
+            <li><strong>Email Address:</strong> Used strictly to verify identity and return a direct response to your message.</li>
+            <li><strong>Message Contents:</strong> Text provided by you outlining your project or inquiry.</li>
+        </ul>
+
+        <h2>2. Data Processor Infrastructure (Forminit)</h2>
+        <p>We do not store or host contact form submission histories locally on our server infrastructure. Instead, we utilize <strong>Forminit</strong> (a service compliant with EU and UK GDPR frameworks) as our contractually bound Data Processor. </p>
+        <ul>
+            <li><strong>Encryption & Transmission:</strong> All submission communications are fully encrypted in transit via TLS 1.2 or greater protocols, and securely stored at rest using AES-256 bit encryption algorithms.</li>
+            <li><strong>Infrastructure Hosting:</strong> Forminit handles form submissions via application and storage nodes hosted strictly inside Amazon Web Services (AWS) data centers located within the <strong>European Union (EU) regions</strong>.</li>
+            <li><strong>Automated Processing:</strong> Submissions are automatically parsed through Forminit's security infrastructure (including AI spam analysis) to verify integrity and block illicit payloads.</li>
+            <li>For further information, please consult the formal <a class="inline-link" href="https://forminit.com/privacy-policy/" target="_blank">Forminit Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>3. Data Retention Limitation</h2>
+        <p>We operate under strict data minimization compliance. Communication archives, including your email address and message contents, will be retained on Forminit's platform for a maximum period of <strong>24 months</strong> following your last active correspondence, or until you execute your right to request deletion, at which time the dataset is entirely and permanently destroyed.</p>
+
+        <h2>4. International Privacy Rights</h2>
+        <p>Regardless of whether you reside in the EU, the United Kingdom, or under US frameworks (such as California's CCPA), you are granted full agency over your data. You may exercise the right to:</p>
+        <ul>
+            <li>Request comprehensive copies of all historical communication records we hold.</li>
+            <li>Demand immediate remediation of inaccurate or outdated contact points.</li>
+            <li>Request absolute erasure (the <strong>"Right to Be Forgotten"</strong>) of all records from both our local access portals and Forminit's cloud backups.</li>
+        </ul>
+
+        <h2>5. Data Controller Contacts</h2>
+        <p>To request formal inspection, alteration, or complete purging of your personal records, contact the Data Controller directly via:</p>
+        <ul>
+            <li><strong>Email:</strong> collin.shea1015@gmail.com</li>
+        </ul>
+    </div>
+
+</body>
+</html>
